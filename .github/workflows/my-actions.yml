@@ -1,0 +1,31 @@
+#-----------------------------------------
+# GitHub Actions for 'simple_fastapi' app
+#-----------------------------------------
+
+name: My-GitHub-Action-Basics
+
+on: 
+  push:
+    branches: 
+      - develop
+
+jobs:
+  my_testing:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Print Hello Message
+      run : echo "Hello World from my-testing"
+
+    
+  my_running:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Prine Hi Message
+      run : echo "Hi from my_running"
+
+      
+
+
+
